@@ -1,0 +1,127 @@
+/* Importando Materialize */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #F6F6F6;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste exacto a la altura de la pantalla */
+    text-align: center;
+    overflow: hidden; /* Evita el scroll */
+    margin: 0;
+    padding: 0;
+
+
+    background-image: url('img.jpg'); /* Ruta de tu imagen */
+    background-size:cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position:bottom; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+    justify-content: space-between;
+    text-align:justify;
+    width: 90%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
+    gap: 30px;
+
+    background-image: url('taza.jpg'); /* Ruta de tu imagen */
+    background-size:cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position:bottom; /* Centra la imagen */
+    background-repeat: no-repeat;
+    
+}
+
+section {
+    flex: 4; /* Aumenta el espacio del texto */
+    padding: 2rem;
+}
+
+img {
+    flex: 1; /* Reduce el espacio de la imagen */
+    max-width: 400px;
+    height: auto;
+     /* También puedes reducir el tamaño máximo */
+}
+
+/* *** RESPONSIVE *** */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+    }
+
+    section {
+        padding-right: 0; /* Elimina el espacio lateral del texto */
+    }
+
+    img {
+        margin-top: 1.5rem; /* Espacio entre el texto y la imagen */
+        max-width: 80%; /* Hace que la imagen sea más flexible */
+    }
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ceea2c;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #cfd8dc;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-destaque {
+    color: #ffeb3b;
+    font-weight: bold;
+}
+
+.texto-destacado {
+    color: #81c784;
+    font-weight: bold;
+}
+
+/* Estilo de enlaces */
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #26a69a;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #00796b;
+    transform: scale(1.05);
+}
