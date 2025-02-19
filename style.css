@@ -30,7 +30,7 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    align-items:end;
+    align-items:center;
     justify-content: space-between;
     text-align:justify;
     width: 90%;
@@ -56,8 +56,9 @@ section {
 
 img {
     flex: 1; /* Reduce el espacio de la imagen */
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
+    margin-right: 4rem;
      /* También puedes reducir el tamaño máximo */
 }
 
@@ -87,7 +88,7 @@ h1 {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 2;
     color: #cfd8dc;
     margin-bottom: 1.5rem;
@@ -106,7 +107,11 @@ p {
 /* Estilo de enlaces */
 .links {
     display: flex;
-    gap: 15px;
+    background-color: #697509;
+}
+
+.links:hover {
+    background-color: #9fb115;
 }
 
 a {
@@ -114,14 +119,31 @@ a {
     padding: 12px 25px;
     font-size: 1.1rem;
     color: white;
-    background-color: #26a69a;
+    background-color: #697509;
     border-radius: 8px;
     text-decoration: none;
     transition: background 0.3s, transform 0.2s;
-    cursor: pointer;
+    cursor:pointer;
+    gap: 15px;
 }
 
 a:hover {
-    background-color: #00796b;
+    background-color: #9fb115;
     transform: scale(1.05);
+}
+
+
+.caveat-uniquifier {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 1rem;
+    font-style: normal;
+  }
+
+.card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 1rem;
 }
