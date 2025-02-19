@@ -105,9 +105,11 @@ p {
 }
 
 /* Estilo de enlaces */
+
 .links {
     display: flex;
     background-color: #697509;
+    box-shadow: 0px 4px 15px rgb(197, 194, 5);
 }
 
 .links:hover {
@@ -125,6 +127,7 @@ a {
     transition: background 0.3s, transform 0.2s;
     cursor:pointer;
     gap: 15px;
+    box-shadow: 0px 4px 15px rgb(197, 194, 5);
 }
 
 a:hover {
@@ -141,9 +144,9 @@ a:hover {
   }
 
 .card {
-    background: #1e1e1e;
+    background: #00000067;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 4px 15px rgb(197, 194, 5);
     text-align: center;
     padding: 1rem;
 }
